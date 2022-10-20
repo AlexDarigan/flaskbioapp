@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,11 +6,9 @@
     </head>
     <body>
         <ul>
-            <li>Home</li>
-            <li>Personal Page</li>
-            <li>Interests Page</li>
-            <li>CV Page</li>
-            <li>Computing Technologies</li>
+            {% for item in ["Home", "Personal", "Interests", "CV", "Tech"] %}
+                <li><a href="{{url_for(item.lower())}}">{{item}}</a></li>
+            {% endfor %}
         </ul>
         {% block body %} Base Body {% endblock %}
     </body>
