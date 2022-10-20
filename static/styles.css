@@ -1,3 +1,25 @@
-* {
-    border: 2px black solid;
+.nav-container {
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+    background-color: blueviolet;
+    align-content: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: auto;
+    width: fit-content;
+    background-color: grey;
+    border: 2px blue solid;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin: 4px;
+    background-color: wheat;
+    text-decoration: none;
 }

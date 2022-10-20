@@ -6,11 +6,13 @@
         <link rel="stylesheet" href="/static/styles.css"/>
     </head>
     <body>
-        <ul>
+        <div class="nav-container">
+        <ul class="navbar">
             {% for item in ["Home", "Personal", "Interests", "CV", "Tech"] %}
-                <li><a href="{{url_for(item.lower())}}">{{item}}</a></li>
+                <li><a class="nav-item" href="{{url_for(item.lower())}}">{{item}}</a></li>
             {% endfor %}
         </ul>
+        </div>
         {% block body %} Base Body {% endblock %}
     </body>
 </html>
