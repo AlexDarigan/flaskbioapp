@@ -39,13 +39,16 @@ def wat():
 def godotengine():
     return redirect("https://www.godotengine.org", 301)
 
+
 @app.get("/dockerhome")
 def dockerhome():
     return redirect("https://www.docker.com/", 301)
 
+
 @app.get("/composehome")
 def composehome():
     return redirect("https://developer.android.com/jetpack/compose", 301)
+
 
 # Tech Sub Page Routes
 @app.get("/godot")
