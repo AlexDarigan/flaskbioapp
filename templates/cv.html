@@ -1,2 +1,70 @@
 {% extends "base.html" %}
-{% block body %} CV Page {% endblock %}
+{% block body %} 
+<div class="content">
+    <h1>My Technological Expertise</h1>
+    <div>
+        <span>Name: David Darigan</span>
+        <h2>Personal Profile</h2>
+        <ul>
+            {% for item in 
+                ["SETU Carlow Third Year Software Bachelor of Science Honours",
+                "Applied TDD to produce popular .NET software",
+                "Ambitious, hard-working, self-motivated, and quick learner"]
+            %}
+            <li>{{item}}</li>
+        {% endfor %}
+        </ul>
+        <h2>Technical Skills</h2>
+        
+        <div class="grid">
+        {% for item in 
+            ["HTML", "CSS", "Java", "JavaScript", "PHP", "Python", 
+            "C++", "C", "C#", "F#", "Kotlin", "SQL", "NoSQL", "TDD",
+            "Docker", "Git", "Node", "React", "Jetpack Compose", "GDScript"] %}
+            <span>{{item}}</span>
+        {% endfor %}
+        </div>
+        
+        <h2>Projects</h2>
+        <ul>
+            <!-- Add External Link Here -->
+            <li>PROJECT TITLE: WAT - Unit Testing for Godot</li>
+        </ul>
+        <h2>Work Experience</h2>
+        <ul>
+        {% for item in [
+            ("2022 - Present, Google Developer’s Student Club, SETU Carlow", "Team Lead"),
+            ("2021 - 2022 Google Developer’s Student Club, SETU Carlow", "Core Team Member"),
+            ("2012 - 2014, Gamer’s Paradise, Wexford", "Yugioh TCG Tournament Manager")] %}
+        <li><h4>{{item[0]}}</h4>{{item[1]}}</li>
+        {% endfor %}
+        </ul>
+    </div>
+
+    
+
+    <!-- 
+     2022 - Present, Google Developer’s Student Club, SETU Carlow
+Team Lead
+
+Delegated tasks to core team members
+Analysed issues of the previous year to improve the club this year
+
+2021 - 2022 Google Developer’s Student Club, SETU Carlow
+Core Team Member
+
+Developed and demonstrated applications
+Integrated third-party APIs
+
+2012 - 2014, Gamer’s Paradise, Wexford
+Yugioh TCG Tournament Manager
+
+Established Official Konami Tournaments on Shop Premises on own initiative
+Managed events of up to 80 participants in a timely and efficient manner.
+Collaborated with Esdevium Games to organise official brand prize support
+Responsible for entry fee of tournaments to cover additional prize support from premise.
+Communicated concerns of participants to premise owners.
+
+    -->
+</div> 
+{% endblock %}

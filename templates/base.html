@@ -6,9 +6,9 @@
         <link rel="stylesheet" href="/static/styles.css"/>
     </head>
     <body>
-        <ul>
+        <ul class="nav-ul">
             {% for item in ["Home", "Personal", "Interests", "CV", "Tech"] %}
-                <li><a class="nav-item" href="{{url_for(item.lower())}}">{{item}}</a></li>
+                <li class="nav-li"><a href="{{url_for(item.lower())}}">{{item}}</a></li>
             {% endfor %}
         </ul>
         <br>
