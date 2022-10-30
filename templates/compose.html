@@ -1,4 +1,17 @@
+{% macro newtab(link, text) -%}
+<a href="{{link}}" target="_blank">{{text}}</a>
+{% endmacro -%}
+
 {% extends "base.html" %}
 {% block body %} 
-Compose
+<center>
+    <img src="static/compose.png" width="256" height="256"/>
+    <h1>Jetpack Compose</h1>
+    <h6><a href="/composehome", target="_blank">www.docker.com</a></h6>
+</center>
+<p class="content">
+    Jetpack Compose is Android’s recommended, modern toolkit for building native UI. 
+    It simplifies and accelerates UI development on Android. Quickly bring your app to life with less code, 
+    powerful tools, and intuitive Kotlin APIs.
+</p>
 {% endblock %}

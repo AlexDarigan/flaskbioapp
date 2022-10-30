@@ -1,4 +1,17 @@
+{% macro newtab(link, text) -%}
+<a href="{{link}}" target="_blank">{{text}}</a>
+{% endmacro -%}
+
 {% extends "base.html" %}
 {% block body %} 
-Docker
+<center>
+    <img src="static/docker.svg" width="256" height="256"/>
+    <h1>Docker</h1>
+    <h6><a href="/composehome", target="_blank">www.docker.com</a></h6>
+</center>
+<p class="content">
+    Docker is a set of platform as a service (PaaS) products that use OS-level virtualization 
+    to deliver software in packages called containers. The service has both free and premium tiers. 
+    The software that hosts the containers is called Docker Engine.
+</p>
 {% endblock %}
