@@ -33,6 +33,7 @@ def personal():
 def tech():
     return render_template("tech.html")
 
+
 @app.get("/wat")
 def wat():
     return redirect("https://github.com/alexdarigan/wat", 301)
