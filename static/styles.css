@@ -21,3 +21,12 @@ ul {
   li a:hover {
     background-color: #111;
   }
+
+  .content {
+    margin: auto;
+    padding: auto;
+    margin-bottom: 0px;
+    width: 60vw;
+    border: 2px solid blue;
+    text-align: center;
+}
