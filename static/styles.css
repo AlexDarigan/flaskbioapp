@@ -36,3 +36,21 @@
     border: 2px black dashed;
     padding: 4px;
 }
+
+.card {
+  background-color: black;
+  border: 2px blue inset;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.card-button:hover {
+  background-color: gray;
+}
+
+.card > h1 {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  color: white;
+}

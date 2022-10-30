@@ -1,8 +1,15 @@
+{% macro card(img, title, link) -%}
+<a href="{{url_for(link)}}" class="card card-button">
+    <img src="{{img}}" width="256" height="256">
+    <h1>{{title}}</h1>
+</a>
+{% endmacro -%}
+
 {% extends "base.html" %}
 {% block body %} 
 <div style="display: flex; justify-content: space-around">
-{{card("/static/godot.svg", "Godot")}}
-{{card("/static/compose.png", "Jetpack Compose")}}
-{{card("/static/docker.svg", "Docker")}}
+{{card("/static/godot.svg", "Godot", "godot")}}
+{{card("/static/compose.png", "Jetpack Compose", "compose")}}
+{{card("/static/docker.svg", "Docker", "docker")}}
 </div>
 {% endblock %}

@@ -33,6 +33,18 @@ def tech():
 def wat():
     return redirect("https://github.com/alexdarigan/wat", 301)
 
+# Tech Sub Page Routes
+@app.get("/godot")
+def godot():
+    return render_template("godot.html")
+
+@app.get("/compose")
+def compose():
+    return render_template("compose.html")
+
+@app.get("/docker")
+def docker():
+    return render_template("docker.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
