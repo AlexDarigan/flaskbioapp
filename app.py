@@ -2,22 +2,15 @@ from flask import Flask, render_template, url_for, redirect
 
 app = Flask(__name__)
 
-
+@app.get("/home")
 @app.get("/")
-def index():
-    return render_template("index.html")
+def home():
+    return render_template("home.html")
 
 
 @app.get("/cv")
 def cv():
     return render_template("cv.html")
-
-
-@app.get("/home")
-def home():
-    # Redundant with index?
-    return render_template("home.html")
-
 
 @app.get("/interests")
 def interests():
@@ -32,7 +25,6 @@ def personal():
 @app.get("/tech")
 def tech():
     return render_template("tech.html")
-
 
 @app.get("/wat")
 def wat():
