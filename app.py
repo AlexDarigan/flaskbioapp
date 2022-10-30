@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, redirect
 
 app = Flask(__name__)
 
@@ -32,6 +32,10 @@ def personal():
 @app.get("/tech")
 def tech():
     return render_template("tech.html")
+
+@app.get("/wat")
+def wat():
+    return redirect("https://github.com/alexdarigan/wat", 301)
 
 
 if __name__ == "__main__":
