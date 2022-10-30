@@ -2,6 +2,7 @@ from flask import Flask, render_template, url_for, redirect
 
 app = Flask(__name__)
 
+
 @app.get("/home")
 @app.get("/")
 def home():
@@ -11,6 +12,7 @@ def home():
 @app.get("/cv")
 def cv():
     return render_template("cv.html")
+
 
 @app.get("/interests")
 def interests():
@@ -25,6 +27,7 @@ def personal():
 @app.get("/tech")
 def tech():
     return render_template("tech.html")
+
 
 @app.get("/wat")
 def wat():
