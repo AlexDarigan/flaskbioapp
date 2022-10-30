@@ -1,2 +1,8 @@
 {% extends "base.html" %}
-{% block body %} Computing Technologies Page {% endblock %}
+{% block body %} 
+<div style="display: flex; justify-content: space-around">
+{{card("/static/godot.svg", "Godot")}}
+{{card("/static/compose.png", "Jetpack Compose")}}
+{{card("/static/docker.svg", "Docker")}}
+</div>
+{% endblock %}
