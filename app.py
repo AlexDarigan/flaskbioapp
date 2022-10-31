@@ -53,7 +53,7 @@ def composehome():
 # Tech Sub Page Routes
 @app.get("/godot")
 def godot():
-    return render_template("godot.html", title="Godot Technology")
+    return render_template("tech/godot.html", title="Godot Technology")
 
 
 # godot sub page routes
@@ -69,12 +69,12 @@ def ariel():
 
 @app.get("/compose")
 def compose():
-    return render_template("compose.html", title="Jetpack Compose Technology")
+    return render_template("tech/compose.html", title="Jetpack Compose Technology")
 
 
 @app.get("/docker")
 def docker():
-    return render_template("docker.html", title="Docker Technology")
+    return render_template("tech/docker.html", title="Docker Technology")
 
 
 if __name__ == "__main__":
