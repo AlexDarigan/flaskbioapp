@@ -1,3 +1,7 @@
 {% macro helloWorld() -%}
 <div>Hello World</div>
 {%- endmacro -%}
+
+{% macro newtab(link, text) -%}
+<a href="{{link}}" target="_blank">{{text}}</a>
+{% endmacro -%}
