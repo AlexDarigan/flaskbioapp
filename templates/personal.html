@@ -1,2 +1,7 @@
+{% from 'components/article.html' import Article -%}
 {% extends "base.html" %}
-{% block body %} Personal Page (Name, DOB, Weight, Photo, Blurb) {% endblock %}
+{% block body %}
+{% call Article("static/godot.sv", "", "") %}
+Personal Page (Name, DOB, Weight, Photo, Blurb) 
+{% endcall %}
+{% endblock %}
