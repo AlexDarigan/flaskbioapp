@@ -1,13 +1,15 @@
 {% from 'components/article.html' import Article -%}
-{% from 'macros.html' import newtab -%}
+{% from 'components/newtab.html' import Newtab -%}
 {% extends "base.html" %}
 {% block body %}
-{% call Article("static/godot.svg", "\godotengine", "Godot Game Engine") %}
-Godot is a cross-platform, free and open-source game engine released under the MIT license.
-It was initially developed by Argentine software developers {{newtab("/juan", "Juan Linietsky")}} 
-and {{newtab("/ariel", "Ariel Manzur")}} for several companies in Latin America prior to its public release. 
+{% call Article("static/godot.svg") %}
+<h1>{{Newtab("/godotengine", "Godot Engine")}}</h1>
+<p class="content">Godot is a cross-platform, free and open-source game engine released under the MIT license.
+It was initially developed by Argentine software developers {{Newtab("/juan", "Juan Linietsky")}} 
+and {{Newtab("/ariel", "Ariel Manzur")}} for several companies in Latin America prior to its public release. 
 The development environment runs on multiple operating systems including Linux, BSDs, macOS, and Microsoft Windows. 
 It is designed to create both 2D and 3D games targeting PC, mobile, and web platforms. It can also be used to 
 create non game software, including editors.
+</p>
 {% endcall %}
 {% endblock %}

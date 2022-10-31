@@ -1,10 +1,12 @@
 {% from 'components/article.html' import Article -%}
-{% from 'macros.html' import newtab -%}
+{% from 'components/newtab.html' import Newtab -%}
 {% extends "base.html" %}
 {% block body %}
-{% call Article("static/compose.png", "/composehome", "Jetpack Compose") %}
-Jetpack Compose is Android’s recommended, modern toolkit for building native UI. 
+{% call Article("static/compose.png") %}
+<h1>{{Newtab("/composehome", "Jetpack Compose")}}</h1>
+<p class="content">Jetpack Compose is Android’s recommended, modern toolkit for building native UI. 
 It simplifies and accelerates UI development on Android. Quickly bring your app to life with less code, 
 powerful tools, and intuitive Kotlin APIs.
+</p>
 {% endcall %}
 {% endblock %}

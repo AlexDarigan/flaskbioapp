@@ -1,10 +1,7 @@
-{% from 'macros.html' import newtab %}
-
-{% macro Article(img, route, title) -%}
+{% macro Article(img) -%}
 <center>
     <img src={{img}} width="256" height="256">
-    <h1>{{newtab(route, title)}}</h1>
-    <p class="content">{{caller()}}</p>
+    {{caller()}}
 </center>
 {%- endmacro -%}
 
