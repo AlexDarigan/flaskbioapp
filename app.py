@@ -6,27 +6,27 @@ app = Flask(__name__)
 @app.get("/home")
 @app.get("/")
 def home():
-    return render_template("home.html")
+    return render_template("home.html", title="Home")
 
 
 @app.get("/cv")
 def cv():
-    return render_template("cv.html")
+    return render_template("cv.html", title="CV")
 
 
 @app.get("/interests")
 def interests():
-    return render_template("interests.html")
+    return render_template("interests.html", title="Interests")
 
 
 @app.get("/personal")
 def personal():
-    return render_template("personal.html")
+    return render_template("personal.html", title="Personal Profile")
 
 
 @app.get("/tech")
 def tech():
-    return render_template("tech.html")
+    return render_template("tech.html", title="Computing Technologies")
 
 
 # Redirects
@@ -53,7 +53,7 @@ def composehome():
 # Tech Sub Page Routes
 @app.get("/godot")
 def godot():
-    return render_template("godot.html")
+    return render_template("godot.html", title="Godot Technology")
 
 
 # godot sub page routes
@@ -69,12 +69,12 @@ def ariel():
 
 @app.get("/compose")
 def compose():
-    return render_template("compose.html")
+    return render_template("compose.html", title="Jetpack Compose Technology")
 
 
 @app.get("/docker")
 def docker():
-    return render_template("docker.html")
+    return render_template("docker.html", title="Docker Technology")
 
 
 if __name__ == "__main__":
