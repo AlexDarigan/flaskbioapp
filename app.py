@@ -72,9 +72,9 @@ def compose():
     return render_template("tech/compose.html", title="Jetpack Compose Technology")
 
 
-@app.get("/docker")
-def docker():
-    return render_template("tech/docker.html", title="Docker Technology")
+@app.get("/wattech")
+def wattech():
+    return render_template("tech/wat.html", title="WAT Technology")
 
 
 if __name__ == "__main__":
