@@ -1,32 +1,35 @@
 .nav-ul {
+    width: 85vw;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  .nav-li {
-    float: left;
-  }
-  
-  .nav-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .nav-li a:hover {
-    background-color: #111;
-  }
-
-  .content {
     margin: auto;
     padding: auto;
-    margin-bottom: 0px;
-    width: 60vw;
+    overflow: hidden;
+    border: darkorange ridge 2px;
+    background-color: burlywood;
+    color: black;
+  }
+  
+.nav-li {
+  float: left;
+}
+  
+.nav-li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+.nav-li a:hover {
+  background-color: darkorange
+}
+
+.content {
+  margin: auto;
+  padding: auto;
+  margin-bottom: 0px;
+  width: 60vw;
 }
 
 .grid {
@@ -51,4 +54,18 @@
   padding: 0px;
   text-align: center;
   color: white;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.body-content {
+  width: 88vw;
+  margin-bottom: 0px;
+  margin: auto;
+  padding: auto;
+  border: darkorange ridge 2px;
+  background-color: burlywood;
+  color: black;
 }
